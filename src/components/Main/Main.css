@@ -1,0 +1,24 @@
+.main {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.main__card-section {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.main__card-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.main__title {
+  padding-top: 20px;
+  padding-left: 40px;
+  font-weight: 700;
+  font-size: 20px;
+}

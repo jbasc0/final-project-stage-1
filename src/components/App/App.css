@@ -1,0 +1,8 @@
+.app {
+  background: #ffffff;
+  height: 100vh;
+
+  min-width: 440px;
+  max-width: 1440px;
+  margin: auto;
+}

@@ -1,0 +1,24 @@
+.about {
+  width: auto;
+  margin-top: 60px;
+  margin-left: 40px;
+  margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about__content {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about__title {
+  display: flex;
+  justify-content: center;
+}
+
+.about__info {
+  margin-left: auto;
+  margin-right: auto;
+}
