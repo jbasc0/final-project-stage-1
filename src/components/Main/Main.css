@@ -22,3 +22,32 @@
   font-weight: 700;
   font-size: 20px;
 }
+
+.main__loading {
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 835px) {
+  .main__card-items {
+    margin-top: 140px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main__card-items {
+    margin-top: 160px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .main__card-items {
+    margin-top: 180px;
+  }
+}
+
+@media screen and (max-width: 362px) {
+  .main__card-items {
+    margin-top: 200px;
+  }
+}

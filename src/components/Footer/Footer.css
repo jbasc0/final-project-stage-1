@@ -6,6 +6,8 @@
 
 .footer__content {
   margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .footer__button {
