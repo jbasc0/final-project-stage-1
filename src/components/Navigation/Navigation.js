@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Navigation = () => {
   return (
-    <div className="navigation">
+    <nav className="navigation">
       <Link to="/">
         <button type="text" className="navigation__button">
           Home
@@ -54,7 +54,7 @@ const Navigation = () => {
           Gen 9
         </button>
       </Link>
-    </div>
+    </nav>
   );
 };
 export default Navigation;

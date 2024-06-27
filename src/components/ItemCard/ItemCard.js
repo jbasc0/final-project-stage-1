@@ -3,7 +3,7 @@ import "./ItemCard.css";
 const ItemCard = ({ data, onSelectCard }) => {
   return (
     <div className="card" id={data.id}>
-      <h1 className="card__name">{data.name.toUpperCase()}</h1>
+      <p className="card__name">{data.name.toUpperCase()}</p>
       <img
         className="card__image"
         alt={data.name}

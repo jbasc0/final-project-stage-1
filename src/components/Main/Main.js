@@ -33,7 +33,7 @@ function Main({ gen, pokemon, onSelectCard }) {
     const fetchData = async () => {
       const results = await Promise.all(
         filteredCards.map((item) =>
-          getPokemonData(item.url).catch((err) => console.log(err))
+          getPokemonData(item.url).catch((err) => alert("Something went wrong"))
         )
       );
 
@@ -48,7 +48,9 @@ function Main({ gen, pokemon, onSelectCard }) {
       <section className="main__card-section" id="card-section">
         <div>
           {loading ? (
-            <Preloader />
+            <div className="main__loading">
+              <Preloader />
+            </div>
           ) : (
             <div className="main__card-items">
               {pokeData.map((item) => (

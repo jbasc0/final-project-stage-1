@@ -29,7 +29,7 @@ function App() {
         setPokemon(res.results);
       })
 
-      .catch((err) => console.log(err));
+      .catch((err) => alert("Something went wrong"));
   });
 
   useEffect(() => {
@@ -39,6 +39,7 @@ function App() {
         handleCloseModal();
       }
     };
+
     document.addEventListener("keydown", handleEscClose);
     return () => {
       document.removeEventListener("keydown", handleEscClose);

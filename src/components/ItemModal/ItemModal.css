@@ -40,37 +40,38 @@
 
 .modal__image-name {
   font-size: 20px;
-  font-weight: 700;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 500;
   margin-left: 20px;
+  margin-bottom: 0;
 }
 
 .modal__image-id {
   font-size: 16px;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 400;
   margin-top: 10px;
   margin-left: 20px;
+  margin-bottom: 0;
 }
 
 .modal__image-types {
   font-size: 16px;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 400;
   margin-top: 10px;
   margin-left: 20px;
 }
 
-.modal__item-delete {
-  position: relative;
-  color: rgba(255, 77, 0, 1);
-  border: none;
-  background-color: #fff;
-  font-size: 20px;
-  font-weight: 700;
-  left: 350px;
-  top: -60px;
-}
-
-.modal__item-delete:hover {
-  cursor: pointer;
-}
-
-.modal__item-delete-hidden {
-  visibility: hidden;
+@media screen and (max-width: 450px) {
+  .modal__item-content {
+    width: 250px;
+    height: 350px;
+  }
+  .modal__image {
+    height: 230px;
+  }
+  .modal__item-close {
+    margin-left: 215px;
+  }
 }

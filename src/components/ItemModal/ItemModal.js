@@ -20,8 +20,8 @@ const ItemModal = ({ selectedCard, onClose }) => {
   }, [types]);
 
   return (
-    <div className={"modal"}>
-      <div className="modal__item-content">
+    <div className="modal" id="modal" onClick={onClose}>
+      <div className="modal__item-content" id="modal-item-content">
         <button className="modal__item-close" type="button" onClick={onClose}>
           <img src={close} alt="close" />
         </button>
@@ -30,9 +30,9 @@ const ItemModal = ({ selectedCard, onClose }) => {
           alt={selectedCard.name}
           src={selectedCard.sprites.front_default}
         />
-        <h1 className="modal__image-name">{selectedCard.name.toUpperCase()}</h1>
-        <div className="modal__image-id">ID# {selectedCard.id}/1025</div>
-        <div className="modal__image-types">Type: {pokeTypes}</div>
+        <p className="modal__image-name">{selectedCard.name.toUpperCase()}</p>
+        <p className="modal__image-id">ID# {selectedCard.id}/1025</p>
+        <p className="modal__image-types">Type: {pokeTypes}</p>
       </div>
     </div>
   );
